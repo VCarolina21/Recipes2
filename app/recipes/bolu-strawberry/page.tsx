@@ -7,7 +7,6 @@ export default function BoluStrawberryPage() {
         🍰 Bolu Strawberry
       </h1>
 
-      {/* IMAGE */}
       <div className="flex justify-center mb-8">
         <img
           src="/bolustrawberry.png"
@@ -17,13 +16,11 @@ export default function BoluStrawberryPage() {
         />
       </div>
 
-      {/* DESCRIPTION */}
       <p className="text-center text-lg mb-8">
         Bolu lembut beraroma strawberry dengan tekstur moist dan rasa manis yang pas.
         Cocok untuk camilan sore ditemani teh hangat 💗
       </p>
 
-      {/* RECIPE BOX */}
       <div
         className="card"
         style={{ padding: "24px", backgroundColor: "white" }}
@@ -48,7 +45,6 @@ export default function BoluStrawberryPage() {
         </ol>
       </div>
 
-      {/* BACK BUTTON */}
       <div className="text-center mt-10">
         <button
           className="button"

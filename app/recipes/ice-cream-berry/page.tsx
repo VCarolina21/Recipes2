@@ -7,7 +7,6 @@ export default function IceCreamBerryPage() {
         🍨 Ice Cream Berry
       </h1>
 
-      {/* IMAGE */}
       <div className="flex justify-center mb-8">
         <img
           src="/icecreamberry.png"
@@ -17,13 +16,11 @@ export default function IceCreamBerryPage() {
         />
       </div>
 
-      {/* DESCRIPTION */}
       <p className="text-center text-lg mb-8">
         Es krim lembut dengan perpaduan rasa berry segar yang manis dan sedikit asam. 
         Cocok dinikmati di siang hari yang panas atau sebagai pencuci mulut 🍓🫐
       </p>
 
-      {/* RECIPE BOX */}
       <div
         className="card"
         style={{ padding: "24px", backgroundColor: "white" }}
@@ -49,7 +46,6 @@ export default function IceCreamBerryPage() {
         </ol>
       </div>
 
-      {/* BACK BUTTON */}
       <div className="text-center mt-10">
         <button
           className="button"

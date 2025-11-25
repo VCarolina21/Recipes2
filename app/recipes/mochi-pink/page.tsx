@@ -7,7 +7,6 @@ export default function MochiPinkPage() {
         🍡 Mochi Pink
       </h1>
 
-      {/* IMAGE */}
       <div className="flex justify-center mb-8">
         <img
           src="/mochipink.png"
@@ -17,13 +16,11 @@ export default function MochiPinkPage() {
         />
       </div>
 
-      {/* DESCRIPTION */}
       <p className="text-center text-lg mb-8">
         Mochi lembut dan kenyal dengan warna pink cantik, isi kacang merah manis.
         Cocok untuk cemilan lucu dan cantik di sore hari 💗
       </p>
 
-      {/* RECIPE BOX */}
       <div
         className="card"
         style={{ padding: "24px", backgroundColor: "white" }}
@@ -48,8 +45,7 @@ export default function MochiPinkPage() {
           <li>Mochi Pink siap disajikan 💗</li>
         </ol>
       </div>
-
-      {/* BACK BUTTON */}
+      
       <div className="text-center mt-10">
         <button
           className="button"

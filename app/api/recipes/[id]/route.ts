@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
 
-// GET detail
 export async function GET(
   req: Request,
   { params }: { params: { id: string } }
@@ -17,7 +16,6 @@ export async function GET(
   return NextResponse.json(recipe);
 }
 
-// UPDATE (PUT)
 export async function PUT(
   req: Request,
   { params }: { params: { id: string } }
@@ -32,7 +30,6 @@ export async function PUT(
   return NextResponse.json(updated);
 }
 
-// DELETE
 export async function DELETE(
   req: Request,
   { params }: { params: { id: string } }

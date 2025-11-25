@@ -32,20 +32,16 @@ export default function RecipeDetail() {
     return <div className="text-center py-20 font-bold text-xl">Sedang memuat resep... 🍰</div>;
   }
 
-  // Memisahkan teks berdasarkan baris baru (Enter)
   const ingredientsList = recipe.ingredients ? recipe.ingredients.split('\n') : [];
   const stepsList = recipe.desc ? recipe.desc.split('\n') : [];
 
   return (
-    // Gunakan class CSS manual dari globals.css
     <main className="detail-container">
       
-      {/* JUDUL */}
       <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '20px', textAlign: 'center' }}>
         {recipe.title}
       </h1>
 
-      {/* GAMBAR (Class: detail-image) */}
       {recipe.image ? (
         <img src={recipe.image} alt={recipe.title} className="detail-image" />
       ) : (
@@ -54,15 +50,12 @@ export default function RecipeDetail() {
         </div>
       )}
 
-      {/* DESKRIPSI SINGKAT */}
       <p style={{ textAlign: 'center', fontSize: '1.2rem', marginBottom: '30px', fontStyle: 'italic', color: '#555' }}>
         "{recipe.shortDesc}" 💗
       </p>
 
-      {/* KOTAK PINK BESAR (Class: detail-card-pink) */}
       <div className="detail-card-pink">
         
-        {/* BAHAN - BAHAN */}
         <div style={{ marginBottom: '40px' }}>
           <h2 className="detail-section-title">
             📌 Bahan - bahan
@@ -78,7 +71,6 @@ export default function RecipeDetail() {
           )}
         </div>
 
-        {/* CARA MEMBUAT */}
         <div>
           <h2 className="detail-section-title">
             🧁 Cara Membuat
@@ -95,7 +87,6 @@ export default function RecipeDetail() {
         </div>
       </div>
 
-      {/* TOMBOL KEMBALI */}
       <div style={{ textAlign: 'center' }}>
         <button onClick={() => router.back()} className="btn-back">
             ⬅ Kembali ke Home
