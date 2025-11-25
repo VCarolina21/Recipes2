@@ -1,0 +1,21 @@
+datasource db {
+  provider = "sqlite"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Recipe {
+  id           Int      @id @default(autoincrement())
+  title        String
+  ingredients  String
+  instructions String
+  createdAt    DateTime @default(now())
+}
+
+model Email {
+  id           Int     @id @default(autoincrement())
+  email        String
+  instructions String
+}

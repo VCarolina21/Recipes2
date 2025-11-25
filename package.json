@@ -1,0 +1,29 @@
+{
+  "name": "resepin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@prisma/client": "^7.0.0",
+    "bootstrap": "^5.3.8",
+    "next": "16.0.3",
+    "prisma": "^7.0.0",
+    "react": "19.2.0",
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "19.2.0",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.25",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.17",
+    "typescript": "^5"
+  }
+}
