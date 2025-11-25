@@ -214,7 +214,7 @@ export default function Home() {
               {apiRecipes && apiRecipes.map((meal) => (
                 <div className="card border-pink-500 border-4 shadow-pink-200 shadow-lg" key={meal.idMeal}>
                   <img src={meal.strMealThumb} alt={meal.strMeal} className="rounded-2xl mb-3 shadow-md" style={{ width: "100%", height: "200px", objectFit: "cover" }} />
-                  <h2 className="text-xl font-semibold mb-2">{meal.strMeal} (API)</h2>
+                  <h2 className="text-xl font-semibold mb-2">{meal.strMeal}</h2>
                   <p className="text-sm mb-4 line-clamp-2">ID Meal: {meal.idMeal}</p>
                   <button 
                     className="button w-full bg-pink-700 hover:bg-pink-800"
